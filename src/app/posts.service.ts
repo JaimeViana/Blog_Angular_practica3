@@ -23,9 +23,9 @@ export class PostsService {
     ]
   }
 
-  agregarPost(Post): Promise<Post[]> {
+  agregarPost(formValue): Promise<Post[]> {
     return new Promise((resolve, reject) => {
-      this.arrPosts.push(Post)
+      this.arrPosts.push(formValue)
       resolve(this.arrPosts)
     });
   }

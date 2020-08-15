@@ -6,7 +6,7 @@ export class Post {
     fecha: string;
     categoria: string;
 
-    constructor(pTitulo: string, pTexto: string, pAutor: string, pImagen: string, pFecha: string, pCategoria: string) {
+    constructor(pTitulo: string, pTexto: string, pAutor: string, pImagen: string = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png', pFecha: string, pCategoria: string) {
         this.titulo = pTitulo;
         this.texto = pTexto;
         this.autor = pAutor;
