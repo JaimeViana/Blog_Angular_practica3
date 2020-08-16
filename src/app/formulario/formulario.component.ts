@@ -33,6 +33,8 @@ export class FormularioComponent implements OnInit {
     const listaPosts = await this.postsService.agregarPost(this.formulario.value);
     console.log(listaPosts);
     this.router.navigate([pRuta]);
+    localStorage.setItem('posts', JSON.stringify(this.formulario.value));
   }
+
 
 }
