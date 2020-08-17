@@ -1,15 +1,22 @@
-<div class="container">
-    <div class="row listaPosts" (change)="onChange($event)">
-        <select class="col-12">
-            <option value="todas">Todas</option>
-            <option value="Cervezas artesanas">Cervezas artesana</option>
-            <option value="Cervezas de barril">Cervezas de barril</option>
-            <option value="Tercios">Tercios</option>
-            <option value="Botellines">Botellines</option>
-        </select>
-        <div class="col-4 post text-center" *ngFor="let post of posts">
-            <h3>{{ post.titulo }}</h3>
-            <img [src]="post.imagen">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-4">
+        <a class="navbar-brand ml-5" href="#">#TuBlogdeCerveza</a>
+        <button type=" button" class="crear-post btn btn-dark mr-4" (click)="onClick('/new')">Crear nuevo post</button>
+    </nav>
+    <div class="container">
+        <div class="row listaPosts" (change)="onChange($event)">
+            <label>Selecciona una categoría:</label>
+            <select class="col-12 form-control">
+                <option value="todas">Todas</option>
+                <option value="Cervezas artesanas">Cervezas artesana</option>
+                <option value="Cervezas de barril">Cervezas de barril</option>
+                <option value="Tercios">Tercios</option>
+                <option value="Botellines">Botellines</option>
+            </select>
+            <div class="col-12 col-sm-6 col-lg-4 post" *ngFor="let post of posts" (click)="onClick('blog/'+ post.id)">
+                <img [src]="post.imagen">
+                <h3>{{ post.titulo }}</h3>
+            </div>
         </div>
     </div>
 </div>

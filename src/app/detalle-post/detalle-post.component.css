@@ -1,0 +1,74 @@
+.container-fluid {
+    background-color: #061B29;
+    height: 100vh;
+}
+
+.container-fluid nav {
+    justify-content: space-between;
+}
+
+.container-fluid nav a {
+    font-family: 'Russo One', sans-serif;
+    color: #53FBDB;
+}
+
+.container-fluid .crear-post {
+    font-family: 'Russo One', sans-serif;
+    color: #53FBDB;
+    border: 1px solid #53FBDB;
+}
+
+.container-fluid .container {
+    width: 90%;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.container-fluid .container .row {
+    border-radius: 5px;
+}
+
+.container-fluid .container .row .imagen img {
+    width: 360px;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container-fluid .container .row .column div {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-fluid .container .row .column div p {
+    margin: 0 auto;
+    font-size: 85%;
+}
+
+
+
+.post {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.post h4 {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Russo One', sans-serif;
+    color: #53FBDB;
+    opacity: 0.5;
+}
+
+.post h3 {
+    margin-top: 10px;
+    color: #53FBDB;
+}
+
+.post p {
+    opacity: 0.8;
+}
+
+

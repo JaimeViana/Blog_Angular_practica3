@@ -1,13 +1,87 @@
-.listaPosts {
-    background-color: salmon;
+.container-fluid {
+    background-color: #061B29;
+    height: auto;
+}
+
+.container-fluid nav {
+    justify-content: space-between;
+}
+
+.container-fluid nav a {
+    font-family: 'Russo One', sans-serif;
+    color: #53FBDB;
+}
+
+.container-fluid .crear-post {
+    font-family: 'Russo One', sans-serif;
+    color: #53FBDB;
+    border: 1px solid #53FBDB;
+}
+
+.container {
+    width: 85%;
+    padding-bottom: 20px;
+}
+
+.listaPosts select {
+    margin: 10px;
+}
+
+.listaPosts label {
+    font-family: 'Russo One', sans-serif;
+    color: white;
 }
 
 .post{
-    background-color: lightcyan;
-    border: 3px solid black;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    text-align: center;
+    border: 10px solid transparent;
 }
 
-.post img {
-    width: 100px;
-    height: 100px;
+.post:hover {
+    cursor: pointer;
+    border: 5px solid #53FBDB;
+    transition: 0.3s; 
 }
+
+.post h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    opacity: 0.8;
+}
+
+.post h3:hover {
+    opacity: 1;
+}
+
+.post img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
+  @supports(object-fit: cover){
+      .post img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+
+.post img:hover {
+    opacity: 1;
+}
+
+select {
+    background-color : #d1d1d1;
+    opacity: 0.7; 
+}
+

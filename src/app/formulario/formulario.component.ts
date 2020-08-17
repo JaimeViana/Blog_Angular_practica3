@@ -31,9 +31,9 @@ export class FormularioComponent implements OnInit {
   async onSubmit(pRuta) {
     // console.log(this.formulario.value);
     const listaPosts = await this.postsService.agregarPost(this.formulario.value);
-    console.log(listaPosts);
+    // console.log(listaPosts);
     this.router.navigate([pRuta]);
-    localStorage.setItem('posts', JSON.stringify(this.formulario.value));
+    localStorage.setItem('posts', JSON.stringify({ post: this.formulario.value }));
   }
 
 
